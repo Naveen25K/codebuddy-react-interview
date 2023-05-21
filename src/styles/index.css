@@ -1,3 +1,126 @@
 body {
   font-size: 16px;
 }
+
+/* search bar */
+
+.searbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.searbar label {
+  font-size: 20px;
+}
+.searbar input {
+  width: 400px;
+  padding: 5px;
+}
+
+/* input submit button */
+
+.input_submit,
+.book_tickets,
+.back_to_home {
+  background-color: green;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 10px;
+}
+.input_submit:hover .book_tickets:hover,
+.back_to_home:hover {
+  background-color: darkgreen;
+}
+
+/* movie componet css */
+.movie_container {
+  text-align: center;
+}
+.movie_container div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.movie_container input.available {
+  background-color: green;
+  color: white;
+}
+.popup {
+  width: 100px;
+  position: absolute;
+}
+.data input {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.data {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #6c757d;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.book {
+  background-color: grey;
+}
+.instruction {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+/* for reserved seats */
+
+#booked {
+  background-color: grey;
+  color: white;
+}
+
+/* for selcting seats */
+#active {
+  background-color: green;
+  color: white;
+}
+
+/* ticket price component */
+.ticket_price {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.ticket_price h1 {
+  margin: 40px 0px;
+}
+.ticket_price h2 {
+  margin: 40px 0px;
+}
+.ticket_price table,
+td,
+th,
+tr {
+  border: 1px solid grey;
+  padding: 10px;
+}
+.ticket_price table {
+  width: 50%;
+}
